@@ -6,10 +6,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import SimpleBar from "./simpleBar";
-import ImgMediaCard from "./card";
-import { Grid } from '@material-ui/core';
-
 
 function TabContainer({ children, dir }) {
   return (
@@ -24,7 +20,7 @@ TabContainer.propTypes = {
   dir: PropTypes.string.isRequired,
 };
 
-function FullWidthTabs() {
+function FullWidthTabs(props) {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -46,8 +42,7 @@ function FullWidthTabs() {
           textColor="primary"
           variant="fullWidth"
         >
-          <Tab label="Services" />
-          <Tab label="Tickets" />
+          {props.labelTabs.map(tab => <Tab label={tab} />)}
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -55,21 +50,10 @@ function FullWidthTabs() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabContainer dir={theme.direction}>
-            <SimpleBar/>
-            <Grid container spacing={3}>
-                <Grid item md={12} md={4}>
-                    <ImgMediaCard/>
-                </Grid>
-                <Grid item md={12} md={4}>
-                    <ImgMediaCard/>
-                </Grid>
-                <Grid item md={12} md={4}>
-                    <ImgMediaCard/>
-                </Grid>
-            </Grid>
-        </TabContainer>
-        <TabContainer dir={theme.direction}>Item Two</TabContainer>
+        {props.tabFunctionalities.map(tabFunctionality => 
+            <TabContainer dir={theme.direction}>
+                {tabFunctionality}
+            </TabContainer>)}        
       </SwipeableViews>
     </div>
   );
