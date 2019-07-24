@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import Comments from '../../../common/Comments/Comments';
+import Container from '@material-ui/core/Container';
 
 class CreateRepo extends Component {
 
     render() {
         return (
-            <div>
+            <Container fixed>
                 <h1>Create Repository in Github</h1>
-            </div>
+                <Comments />
+            </Container>
         );
     }
 }
