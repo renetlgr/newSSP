@@ -23,6 +23,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import BreadCrumbs from '../Breadcrumbs/breadcrumbs';
+import Router from '../../Routes/Router';
 
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
@@ -183,16 +184,13 @@ export default function PersistentDrawerLeft() {
           [classes.contentShift]: open,
         })}
       >
-        <div>
-          <BreadCrumbs />
-        </div>
         <div className={classes.drawerHeader} />
       </main>
     </div>
   );
 }
 
-const drawerWidth = 240;
+const drawerWidth = 180;
 
 const useStyles = makeStyles(theme => ({
   root: {
