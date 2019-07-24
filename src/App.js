@@ -9,7 +9,6 @@ import Footer from './Components/common/Footer/footer';
 class App extends Component {
 
   render() {
-    const title = "WELLCOME TO SSP-SERVICE"
     return (
       <Container>
         <Header />
