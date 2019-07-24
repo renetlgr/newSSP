@@ -7,7 +7,6 @@ import Header from './Components/common/Header/header';
 class App extends Component {
 
   render() {
-    const title = "WELLCOME TO SSP-SERVICE"
     return (
       <Container>
         <Header />
