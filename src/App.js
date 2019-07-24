@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CardHeader from '@material-ui/core/CardHeader';
-import Router from './Components/router/Router';
+import Router from './Components/Routes/Router';
 
 class App extends Component {
 
