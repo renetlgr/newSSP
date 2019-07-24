@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleBar from "./simpleBar";
+import SimpleBar from "../../../common/SimpleBar/simpleBar";
 import ServiceCard from "./serviceCard";
 import { Grid } from '@material-ui/core';
 import AddServiceCard from './addServiceCard';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FullWidthTabs from "./common/fullWidthTabs";
+import FullWidthTabs from "../../common/FullWidthTabs/fullWidthTabs";
 import Services from "./common/services";
 
 let labelTabs = ['Services','Tickets'];
@@ -10,7 +10,7 @@ let githubCard = {img: 'https://png.icons8.com/ios-filled/github/000000/100',
 let servicesList = [githubCard];
 let tabFunctionalities = [<Services servicesList={servicesList} isAdmin={false}/>,<div>Tickets!!</div>]
 
-class Client extends Component {
+class ServicesClient extends Component {
     render() {
         return (
             <>
@@ -20,4 +20,4 @@ class Client extends Component {
     }
 }
 
-export default Client;
+export default ServicesClient;

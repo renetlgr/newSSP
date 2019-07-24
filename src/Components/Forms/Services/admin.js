@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FullWidthTabs from "./common/fullWidthTabs";
+import FullWidthTabs from "../../common/FullWidthTabs/fullWidthTabs";
 import Services from "./common/services";
 
 let labelTabs = ['Services','Tickets','Usage Statistics','Admins'];
@@ -11,7 +11,7 @@ let servicesList = [githubCard];
 let tabFunctionalities = [<Services servicesList={servicesList} isAdmin={true}/>,<div>Tickets!!</div>,<div>Statistics Here</div>,<div>Admin Options</div>]
 
 
-class Admin extends Component {
+class ServicesAdmin extends Component {
     render() {
         return (
             <>
@@ -21,4 +21,4 @@ class Admin extends Component {
     }
 }
 
-export default Admin;
+export default ServicesAdmin;
