@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import CardHeader from '@material-ui/core/CardHeader';
 import Router from './Components/Routes/Router';
 import Container from '@material-ui/core/Container';
+import Header from './Components/common/Header/header';
 
 class App extends Component {
 
@@ -10,7 +10,7 @@ class App extends Component {
     const title = "WELLCOME TO SSP-SERVICE"
     return (
       <Container>
-        <CardHeader title={title} style={{ textAlign: "center"}}/>
+        <Header />
         <Router />
       </Container>
     );

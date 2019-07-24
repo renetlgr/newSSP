@@ -187,12 +187,6 @@ export default function PersistentDrawerLeft() {
           <BreadCrumbs />
         </div>
         <div className={classes.drawerHeader} />
-        
-        <Typography paragraph>
-          
-         Here Should Go all Cards. 
-        
-        </Typography>
       </main>
     </div>
   );
